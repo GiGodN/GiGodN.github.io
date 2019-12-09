@@ -9,7 +9,7 @@
     <div class="overlay"></div>
     <div class="row">
         <div class="col-12">
-            <h1>Arthur Millers' <i>the Crucible</i> is a play about corruption in the leadership will promote hysteria and fear in order to control its pupils.</h1>
+            <h1>Arthur Miller's <i>the Crucible</i> is a play about corruption in the leadership will promote hysteria and fear in order to control its pupils.</h1>
         </div>
     </div>
     <div class="container-fluid analysis">
