@@ -1,3 +1,27 @@
-h1 {
+h1, h2 {
     text-align: center;
+}
+
+.col > p {
+    text-indent: 40px;
+}
+
+.header {
+    margin: 0 auto;
+    padding: 0;
+    background-image: url('../images/BgEngProj.jpg');
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.analysis {
+    min-height: 80%;
 }

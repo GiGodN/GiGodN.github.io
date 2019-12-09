@@ -41,7 +41,7 @@
                     <a class="nav-link text-light " href="/TestWeb/index.php">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item <?php if($active == 'Project') {print 'active';}?>">
-                    <a class="nav-link text-light" href="/TestWeb/html/VisualProject.php">Visual Litterary Anaylisis</a>
+                    <a class="nav-link text-light" href="/TestWeb/php/VisualProject.php">Visual literary Anaylisis</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button"
