@@ -1,12 +1,11 @@
-/* Sticky footer styles
--------------------------------------------------- */
 html {
   position: relative;
   min-height: 100%;
 }
 
 body {
-  /* Margin bottom by footer height */
+  margin: 0;
+  padding: 0;
   margin-bottom: 60px;
 }
 
@@ -14,18 +13,15 @@ body {
   position: absolute;
   bottom: 0;
   width: 100%;
-  /* Set the fixed height of the footer here */
   height: 60px;
   background-color: #222;
 }
 
-
-/* Custom page CSS
-  -------------------------------------------------- */
-/* Not required for template or sticky footer method. */
-
 body>.container {
-  padding: 60px 15px 0;
+  padding: 0;
+  margin: 0;
+  min-width: 100%;
+  width: 100%;
 }
 
 .container .text-muted {
@@ -33,8 +29,7 @@ body>.container {
 }
 
 .footer>.container {
-  padding-right: 15px;
-  padding-left: 15px;
+  padding: 0;
 }
 
 code {
@@ -54,4 +49,13 @@ select {
 textarea {
   background-color: #222;
   border: #111 2px solid;
+}
+
+.nav-link {
+    color: #eee;
+}
+
+.active {
+  border-left: 2px solid #eee;
+  border-right: 2px solid #eee;
 }
