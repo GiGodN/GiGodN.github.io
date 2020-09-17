@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <STYle>
+        body {
+            background-color: #333344;
+        }
+    </STYle>
+    <title>Test</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="Day"></h1>
+        <h2 class="Date"></h2>
+        <h3 class="Time"></h3>
+    </div>
+</body>
+<script>
+    var date = new Date();
+    var DayA = ["Sunday", "Monday", "Tuesday", "Wendsay", "Tursday", "Firiday", "Saterday"];
+    var MonthA = ["January", "Febuary", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    var Day = "sunday";
+    var DayN = 0;
+    var Month = "January";
+    var Year = 0;
+    var Hour = 0;
+    var PM = false;
+    var Min = 0;
+    var Sec = 0;
+    async function updateTime() {
+        DayN = date.getDate();
+        Day = DayA[date.getDay()];
+        Year = date.getFullYear();
+        Month = MonthA[date.getMonth()];
+        Hour = date.getHours();
+        if (Hour > 12) {
+            Hour -= 12;
+            PM = true;
+        }
+        else {
+            PM = false;
+        }
+        Min = date.getMinutes();
+        Sec = date.getSeconds();
+
+        $("h1.Day").html(Day);
+        $("h2.Date").html(DayN + " " + Month + ", " + Year);
+        if(!PM) {
+            $("h3.Time").html(Hour + ":" + Min + ":" + Sec + " AM");
+        }
+        else {
+            $("h3.Time").html(Hour + ":" + Min + ":" + Sec + " PM");
+        }
+        setTimeout(updateTime(), 10);
+    }
+
+    $(document).ready(updateTime());
+</script>
+</html>
